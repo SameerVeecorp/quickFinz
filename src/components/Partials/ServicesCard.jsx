@@ -8,8 +8,8 @@ const ServicesCard = ({ img, text, title, className }) => {
       } `}
     >
       <div className="relative flex items-center justify-center">
-        <img src={img} alt={title} className="z-10 w-[3.5rem]" />
-        <div className=" absolute top-6 -z-10 h-[3.2rem] w-[6rem] rounded-t-full bg-[#92cbdf] opacity-25" />
+        <img src={img} alt={title} className="z-20 w-[3.5rem]" />
+        <div className="absolute top-6 z-10 h-[3.2rem] w-[6rem] rounded-t-full bg-[#92cbdf] opacity-25" />
       </div>
 
       <div className="mt-8 text-text-color">
