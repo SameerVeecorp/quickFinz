@@ -29,7 +29,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="h-auto w-full bg-[url('/src/assets/footer-bg.svg')] bg-bottom bg-no-repeat font-montserrat">
+    <footer className="h-auto w-full border-t-[3px] border-orange bg-[url('/src/assets/footer-bg.svg')] bg-bottom bg-no-repeat font-montserrat">
       <Wrapper className="h-full w-full">
         <div className="grid h-full w-full grid-cols-1 gap-y-6 px-4 pt-10 md:grid-cols-2 xl:grid-cols-4 xl:gap-x-9">
           <div className="flex flex-col items-start">

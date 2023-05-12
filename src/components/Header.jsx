@@ -54,7 +54,7 @@ const Header = () => {
             </li>
             <li
               className="cursor-pointer text-text-color hover:text-orange"
-              onClick={() => navigate("")}
+              onClick={() => navigate("/support")}
             >
               Support
             </li>
