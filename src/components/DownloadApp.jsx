@@ -6,11 +6,11 @@ import mask from "../assets/mask.png";
 import DownloadBtns from "./Partials/DownloadBtns";
 
 const data = [
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  "Maintain a good financial situation by monitoring your credit score constantly.",
 
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  "Find out about special offers on loans and credit cards.",
 
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+  "Experience a seamless journey.",
 ];
 
 const DownloadApp = () => {
