@@ -17,44 +17,49 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-2 w-full border-b-[3px] border-orange font-montserrat">
-        <Wrapper className="flex items-center justify-between w-full">
+      <header className="w-full border-b-[3px] border-orange py-2 font-montserrat">
+        <Wrapper className="flex w-full items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src={Logo} alt="logo" className="w-[12rem] cursor-pointer" />
+            <img
+              src={Logo}
+              onClick={() => navigate("/")}
+              alt="logo"
+              className="w-[12rem] cursor-pointer"
+            />
             <img
               src={Pay}
               alt="logo"
-              className="w-[4rem] h-[4rem] hidden md:block"
+              className="hidden h-[4rem] w-[4rem] md:block"
             />
           </div>
 
-          <ul className="hidden lg:flex items-center gap-8 text-base font-semibold ">
+          <ul className="hidden items-center gap-8 text-base font-semibold lg:flex ">
             <li onClick={() => navigate("/")}>
               <IoHome
                 size={20}
-                className="hover:text-orange text-text-color cursor-pointer"
+                className="cursor-pointer text-text-color hover:text-orange"
               />
             </li>
             <li
-              className="hover:text-orange text-text-color cursor-pointer"
+              className="cursor-pointer text-text-color hover:text-orange"
               onClick={() => navigate("")}
             >
               Online Services
             </li>
             <li
-              className="hover:text-orange text-text-color cursor-pointer"
+              className="cursor-pointer text-text-color hover:text-orange"
               onClick={() => navigate("")}
             >
               Media Room
             </li>
             <li
-              className="hover:text-orange text-text-color cursor-pointer"
+              className="cursor-pointer text-text-color hover:text-orange"
               onClick={() => navigate("")}
             >
               Support
             </li>
             <li>
-              <Button text="Join us" href={""} />
+              <Button text="Join us" />
             </li>
           </ul>
 
@@ -76,34 +81,34 @@ const Header = () => {
           <IoClose size={35} className="hover:text-text-orange" />
         </div>
 
-        <ul className="z-30 my-10 gap-6 flex cursor-pointer flex-col items-center text-2xl font-semibold">
-          <li onClick={() => navigate("/")} className="flex gap-1 items-center">
+        <ul className="z-30 my-10 flex cursor-pointer flex-col items-center gap-6 text-2xl font-semibold">
+          <li onClick={() => navigate("/")} className="flex items-center gap-1">
             <IoHome
               size={20}
-              className="hover:text-orange text-text-color cursor-pointer"
+              className="cursor-pointer text-text-color hover:text-orange"
             />
             Home
           </li>
           <li
-            className="hover:text-orange text-text-color cursor-pointer"
+            className="cursor-pointer text-text-color hover:text-orange"
             onClick={() => navigate("")}
           >
             Online Services
           </li>
           <li
-            className="hover:text-orange text-text-color cursor-pointer"
+            className="cursor-pointer text-text-color hover:text-orange"
             onClick={() => navigate("")}
           >
             Media Room
           </li>
           <li
-            className="hover:text-orange text-text-color cursor-pointer"
+            className="cursor-pointer text-text-color hover:text-orange"
             onClick={() => navigate("")}
           >
             Support
           </li>
           <li>
-            <Button text="Join us" href={""} />
+            <Button text="Join us" />
           </li>
         </ul>
       </div>

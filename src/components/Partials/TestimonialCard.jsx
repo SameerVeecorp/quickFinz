@@ -2,27 +2,28 @@ import React from "react";
 import Profile from "../../assets/profile.png";
 import Mask from "../../assets/TestimonialMask.png";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({ text, name, profession }) => {
   return (
-    <div className="mt-16 hidden h-auto w-full flex-col rounded-lg border-b-[4px] border-[#f75c29] bg-[#fff] px-8 py-6 drop-shadow-xl lg:flex xl:w-[36rem]">
+    <div className="mt-16 h-auto w-full flex-col rounded-lg border-b-[4px] border-[#f75c29] bg-[#fff] px-8 py-6 drop-shadow-xl xl:w-[36rem]">
       <p className="text-[14px] font-medium leading-[1.3rem] text-[#191919]/70">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        {text}
       </p>
 
-      <div className="mt-5 flex items-center gap-4">
-        <img src={Profile} className="w-[4.5rem]" />
+      <div className="mt-5 flex w-full items-center gap-4">
+        <div className="block w-[45%] md:hidden">
+          <img src={Profile} />
+        </div>
+        <img src={Profile} className="hidden w-[4.5rem] md:block" />
 
         <div className="flex flex-col">
-          <p className="text-[15px] font-bold text-[#005cde]">
-            Yuichi Kaneda, Japan
-          </p>
+          <p className="text-[15px] font-bold text-[#005cde]">{name}</p>
 
-          <p className="text-[12px] font-medium">Director</p>
+          <p className="text-[12px] font-medium">{profession}</p>
 
-          <img src={Mask} className="absolute bottom-6 right-8 w-[5rem]" />
+          <img
+            src={Mask}
+            className="absolute bottom-6 right-8 hidden w-[5rem] md:block"
+          />
         </div>
       </div>
     </div>

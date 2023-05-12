@@ -11,6 +11,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import Visa from "../assets/visa.png";
+import { useNavigate } from "react-router-dom";
 
 const icons = [
   <FaFacebookF size={16} />,
@@ -21,12 +22,26 @@ const icons = [
 ];
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const pageUp = () => {
+    window.scrollTo({ top: (0, 0), behavior: "smooth" });
+  };
+
   return (
     <footer className="h-auto w-full bg-[url('/src/assets/footer-bg.svg')] bg-bottom bg-no-repeat font-montserrat">
       <Wrapper className="h-full w-full">
         <div className="grid h-full w-full grid-cols-1 gap-y-6 px-4 pt-10 md:grid-cols-2 xl:grid-cols-4 xl:gap-x-9">
           <div className="flex flex-col items-start">
-            <img src={Logo} alt="logo" className="-ml-3 h-[3.8rem] w-[11rem]" />
+            <img
+              src={Logo}
+              onClick={() => {
+                pageUp();
+                navigate("/");
+              }}
+              alt="logo"
+              className="-ml-3 h-[3.8rem] w-[11rem] cursor-pointer"
+            />
 
             <p className="mt-4 w-full text-sm font-medium">
               ‘QuickFinz’ is an online services marketplace of Kwickzen Services
@@ -44,15 +59,49 @@ const Footer = () => {
               <h3 className="text-base font-bold text-blue">Legal</h3>
 
               <ul className="mt-6 flex flex-col gap-2 font-semibold">
-                <li className=" cursor-pointer hover:text-orange">About Us</li>
-                <li className=" cursor-pointer hover:text-orange">Careers</li>
-                <li className=" cursor-pointer hover:text-orange">
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("/about-us");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
+                  About Us
+                </li>
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("/careers");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
+                  Careers
+                </li>
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("/privay-policy");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
                   Privacy Policy
                 </li>
-                <li className=" cursor-pointer hover:text-orange">
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("/cancellation-Policy");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
                   Cancellation Policy
                 </li>
-                <li className=" cursor-pointer hover:text-orange">
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("/terms-and-conditions");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
                   Terms & Conditions
                 </li>
               </ul>
@@ -64,14 +113,46 @@ const Footer = () => {
               <h3 className="text-base font-bold text-blue">Important Links</h3>
 
               <ul className="mt-6 flex flex-col gap-2 font-semibold">
-                <li className=" cursor-pointer hover:text-orange">Blog</li>
-                <li className=" cursor-pointer hover:text-orange">Rewards</li>
-                <li className=" cursor-pointer hover:text-orange">
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
+                  Blog
+                </li>
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
+                  Rewards
+                </li>
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("/global-policy");
+                  }}
+                  className=" cursor-pointer hover:text-orange"
+                >
                   Global Anti-Corruption Policy
                 </li>
                 <li className=" flex cursor-pointer flex-col gap-2 hover:text-orange">
-                  <span>RBI Kehta hai</span>
-                  <span>Reports Bugs & Earn</span>
+                  <a href="https://rbikehtahai.rbi.org.in/" target="_blank">
+                    RBI Kehta hai
+                  </a>
+                </li>
+                <li
+                  onClick={() => {
+                    pageUp();
+                    navigate("");
+                  }}
+                  className=" flex cursor-pointer flex-col gap-2 hover:text-orange"
+                >
+                  Reports Bugs & Earn
                 </li>
               </ul>
             </div>
