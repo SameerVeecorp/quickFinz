@@ -19,7 +19,7 @@ const CreditCard = ({ left }) => {
   return (
     <>
       {left === true ? (
-        <div className="flex w-full flex-col items-center font-montserrat lg:w-[60rem] lg:flex-row xl:gap-[10rem]">
+        <div className="flex w-full flex-col items-center   lg:w-[60rem] lg:flex-row xl:gap-[10rem]">
           <div className="relative mb-8 flex w-full items-center justify-center md:w-[55%] lg:mb-0">
             <img src={card} alt="creditCard" className="w-[80%] xl:w-full" />
             <div className="absolute left-5 top-6 -z-10 h-[5rem] w-[5rem] rounded-full bg-[#FEE7DF] md:left-9 md:top-10 md:h-[10rem] md:w-[10rem]" />
@@ -42,7 +42,7 @@ const CreditCard = ({ left }) => {
           </div>
         </div>
       ) : (
-        <div className="flex w-full flex-col items-center font-montserrat lg:w-[60rem] lg:flex-row xl:gap-[10rem]">
+        <div className="flex w-full flex-col items-center   lg:w-[60rem] lg:flex-row xl:gap-[10rem]">
           <div className="flex w-[40%] flex-col items-end xl:w-[55%]">
             <h3
               className="self-center font-bold text-text-color lg:-ml-10 xl:-ml-7

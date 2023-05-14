@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full border-b-[3px] border-orange py-2 font-montserrat">
+      <header className="w-full border-b-[3px] border-orange py-2  ">
         <Wrapper className="flex w-full items-center justify-between">
           <div className="flex items-center gap-2">
             <img
@@ -48,7 +48,7 @@ const Header = () => {
             </li>
             <li
               className="cursor-pointer text-text-color hover:text-orange"
-              onClick={() => navigate("")}
+              onClick={() => navigate("/media-room")}
             >
               Media Room
             </li>
@@ -64,7 +64,7 @@ const Header = () => {
           </ul>
 
           <div onClick={handleMobileMenu} className="lg:hidden">
-            <BiMenu size={35} className="hover:text-text-orange" />
+            <BiMenu size={35} className="hover:text-text-orange text-blue" />
           </div>
         </Wrapper>
       </header>
@@ -82,6 +82,10 @@ const Header = () => {
         </div>
 
         <ul className="z-30 my-10 flex cursor-pointer flex-col items-center gap-6 text-2xl font-semibold">
+          <li className="flex items-center justify-center">
+            <img src={Pay} alt="logo" className="h-[4rem] w-[4rem] md:block" />
+          </li>
+
           <li onClick={() => navigate("/")} className="flex items-center gap-1">
             <IoHome
               size={20}
@@ -108,7 +112,7 @@ const Header = () => {
             Support
           </li>
           <li>
-            <Button text="Join us" />
+            <Button text="Join us" className="text-lg" />
           </li>
         </ul>
       </div>

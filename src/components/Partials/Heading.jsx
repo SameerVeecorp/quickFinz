@@ -7,7 +7,7 @@ const Heading = ({ heading, blueHeading, left, br }) => {
         left === true ? "items-start text-start" : "items-center text-center"
       }`}
     >
-      <h1 className="font-montserrat text-3xl font-bold leading-snug text-[#191919]">
+      <h1 className="  text-3xl font-bold leading-snug text-[#191919]">
         {heading} {br && <br />}
         <span className=" text-blue">{blueHeading}</span>
       </h1>

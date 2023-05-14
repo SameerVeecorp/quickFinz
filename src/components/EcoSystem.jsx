@@ -21,14 +21,14 @@ const EcoSystem = () => {
         </div>
 
         <div className="rounded-dashed-border absolute -top-8 flex h-[4.5rem] w-[95%] items-center justify-center bg-bg-2 md:w-[33rem]">
-          <h1 className="text-center font-montserrat text-base font-bold leading-snug text-[#191919] md:text-2xl">
+          <h1 className="text-center   text-base font-bold leading-snug text-[#191919] md:text-2xl">
             QuickFinz <br className="block md:hidden" />
             <span className=" text-blue"> Ecosystem Architecture</span>
           </h1>
         </div>
 
         <div className="rounded-dashed-border2 absolute -bottom-8 flex h-[4rem] w-[95%] items-center justify-center bg-bg-2 text-center md:w-[34rem]">
-          <h2 className="font-montserrat text-base font-bold leading-snug text-[#191919] md:text-lg ">
+          <h2 className="  text-base font-bold leading-snug text-[#191919] md:text-lg ">
             One - Stop Destination for Neo Banking Services
           </h2>
         </div>

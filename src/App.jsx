@@ -12,6 +12,7 @@ import SignUpPage from "./pages/SignUpPage";
 import LogInPage from "./pages/LogInPage";
 import LoginHeader from "./components/LoginHeader";
 import SupportPage from "./pages/SupportPage";
+import MediaPage from "./pages/MediaPage";
 
 const noHeaderPath = ["/signUp", "/login"];
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsConditionPage />} />
         <Route path="/global-policy" element={<GlobalPolicyPage />} />
         <Route path="/support" element={<SupportPage />} />
+        <Route path="/media-room" element={<MediaPage />} />
       </Routes>
       {noHeaderPath.includes(location.pathname) ? <></> : <Footer />}
     </>

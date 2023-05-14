@@ -6,7 +6,7 @@ const ImgHeading = ({ text, blueText, br, className }) => {
     <div
       className={`${className} ${
         className ? "" : "flex"
-      } h-[18rem] w-full items-center justify-center bg-[url('/src/assets/bg.png')] bg-cover bg-no-repeat font-montserrat`}
+      } h-[18rem] w-full items-center justify-center bg-[url('/src/assets/bg.png')] bg-cover bg-no-repeat  `}
     >
       {/* <img src={Bg} alt="img" /> */}
       <h1 className={` w-full text-center text-[2rem] font-bold`}>

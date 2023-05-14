@@ -7,11 +7,14 @@ const InsuranceCard = ({ name, heading, details, icon }) => {
   return (
     <div className="h-[22.5rem] w-full rounded-lg border-b-[4px] border-orange bg-[#fff] px-6 py-8 drop-shadow-lg md:w-[18rem]">
       <div className="flex w-full items-center justify-between">
-        {icon}
-        <img src={DigiLogo} className="w-[3rem]" />
+        <div>{icon}</div>
+
+        <div>
+          <img src={DigiLogo} className="h-[2rem]" />
+        </div>
       </div>
 
-      <div className="mt-3 flex flex-col items-start">
+      <div className="mt-3 flex flex-col items-start text-start">
         <h5 className="font-bold text-blue">{name}</h5>
 
         <p className="mt-2 flex flex-col gap-2 text-sm font-semibold text-[#000]">

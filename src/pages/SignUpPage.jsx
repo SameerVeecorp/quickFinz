@@ -11,7 +11,7 @@ const SignUpPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="font-montserrat">
+    <div className=" ">
       <section className="mx-auto flex h-screen w-full max-w-[80rem] flex-col gap-[0_3rem] px-4 md:px-10 lg:flex-row xl:px-3">
         <div className="mt-24 flex w-full flex-col lg:w-3/4">
           <h1 className="mx-auto px-4 text-center text-[2.2rem] font-black leading-[3.5rem] md:w-[80%] md:px-0 lg:w-full lg:text-start">

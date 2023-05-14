@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: Montserrat, sans-serif;
+  }
+}
+
 .background {
   background: linear-gradient(180deg, #f75c29 0%, #c83809 100%) 0% 0% no-repeat;
 }

@@ -10,7 +10,7 @@ const SupportPage = () => {
   return (
     <section
       id="aboutUs"
-      className="flex h-full w-full flex-col items-center justify-center bg-[#FBFBFB] font-montserrat"
+      className="flex h-full w-full flex-col items-center justify-center bg-[#FBFBFB]  "
     >
       <ImgHeading text="Support" />
 

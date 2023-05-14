@@ -6,7 +6,7 @@ const PrivacyPolicyPage = () => {
   return (
     <section
       id="privacyPolicy"
-      className="flex h-full w-full flex-col items-center justify-center bg-[#FBFBFB] font-montserrat"
+      className="flex h-full w-full flex-col items-center justify-center bg-[#FBFBFB]  "
     >
       <ImgHeading text="Privacy" blueText="Policy" />
 

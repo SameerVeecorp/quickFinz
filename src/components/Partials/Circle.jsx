@@ -18,7 +18,7 @@ const Circle = ({
   return (
     <>
       <div
-        className={`relative z-20 flex h-[12.8rem] w-[12.8rem] items-center justify-center rounded-full border-[6px] bg-bg-2 text-center font-montserrat xl:h-[14.5rem] xl:w-[14.5rem] ${
+        className={`relative z-20 flex h-[12.8rem] w-[12.8rem] items-center justify-center rounded-full border-[6px] bg-bg-2 text-center   xl:h-[14.5rem] xl:w-[14.5rem] ${
           color === "blue"
             ? "border-blue"
             : color === "orange"

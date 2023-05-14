@@ -14,12 +14,12 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="w-full h-full font-montserrat pt-16 pb-24 bg-bg-2 relative"
+      className="relative h-full   w-full bg-bg-2 pb-24 pt-16"
     >
       <Wrapper className="flex flex-col items-center justify-center">
         <Heading heading="Explore" blueHeading="Services" left={false} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[4rem] gap-x-[6rem] mt-12">
+        <div className="mt-12 grid grid-cols-1 gap-x-[6rem] gap-y-[4rem] md:grid-cols-2 xl:grid-cols-3">
           <ServicesCard
             img={services1}
             title="Credit Services"
@@ -59,7 +59,7 @@ const Services = () => {
 
         <img
           src={mask}
-          className="w-[18rem] absolute z-10 bottom-0 left-3 hidden lg:block"
+          className="absolute bottom-0 left-3 z-10 hidden w-[18rem] lg:block"
         />
       </Wrapper>
     </section>

@@ -17,7 +17,7 @@ const DownloadApp = () => {
   return (
     <section
       id="downloadApp"
-      className="relative h-full w-full bg-[#fff] py-16 font-montserrat"
+      className="relative h-full w-full bg-[#fff] py-16  "
     >
       <Wrapper className="flex h-full w-full flex-col items-center px-7 lg:flex-row">
         <div className="flex w-full items-center justify-center lg:hidden">
