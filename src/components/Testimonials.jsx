@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="flex h-full w-full flex-col items-center justify-center bg-[#f8f8f8] pb-24 pt-16  "
+      className="flex h-full w-full flex-col items-center justify-center bg-[#f8f8f8] pb-[5rem] pt-16  "
     >
       <Heading heading="Testimonials" />
 
@@ -35,7 +35,7 @@ const Testimonials = () => {
             );
           }}
         >
-          <div className="grid h-[46rem] grid-cols-1 items-start justify-start gap-6 px-7 md:h-[26rem] lg:h-[30rem] lg:grid-cols-2 lg:flex-row xl:gap-8 xl:px-0">
+          <div className="grid h-[46rem] grid-cols-1 items-start justify-start gap-6 px-7 md:h-[26rem] lg:h-[30rem] lg:grid-cols-2 lg:flex-row xl:h-[28rem] xl:gap-8 xl:px-0">
             <div className="block justify-self-end">
               <TestimonialCard
                 text="I had an urgent need for a personal loan, but I lacked the time to investigate and contact several lenders. Quick Finz came to my rescue! Finding the best loan offers on the market was really simple for me thanks to their loan aggregation tool. I received quick access to a variety of loans from reliable lenders. I was able to get a loan with good terms and save a lot of time and work because of Quick Finz. In my opinion, anyone looking for a hassle-free loan experience should definitely check out Quick Finz."
@@ -51,7 +51,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <div className="grid h-[46rem] grid-cols-1 items-start justify-start gap-6 px-7 md:h-[26rem] lg:h-[30rem] lg:grid-cols-2 lg:flex-row xl:gap-8 xl:px-0">
+          <div className="grid h-[46rem] grid-cols-1 items-start justify-start gap-6 px-7 md:h-[26rem] lg:h-[30rem] lg:grid-cols-2 lg:flex-row xl:h-[28rem] xl:gap-8 xl:px-0">
             <div className="block justify-self-end">
               <TestimonialCard
                 text="I had an urgent need for a personal loan, but I lacked the time to investigate and contact several lenders. Quick Finz came to my rescue! Finding the best loan offers on the market was really simple for me thanks to their loan aggregation tool. I received quick access to a variety of loans from reliable lenders. I was able to get a loan with good terms and save a lot of time and work because of Quick Finz. In my opinion, anyone looking for a hassle-free loan experience should definitely check out Quick Finz."
