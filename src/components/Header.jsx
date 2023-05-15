@@ -59,7 +59,7 @@ const Header = () => {
               Support
             </li>
             <li>
-              <Button text="Join us" />
+              <Button text="Join" />
             </li>
           </ul>
 
@@ -112,7 +112,7 @@ const Header = () => {
             Support
           </li>
           <li>
-            <Button text="Join us" className="text-lg" />
+            <Button text="Join" className="text-lg" />
           </li>
         </ul>
       </div>
